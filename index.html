@@ -114,6 +114,20 @@
     .hero-txt h1 { font-size: 1.8rem; }
     .hero-in { min-height: 85vh; padding: 2rem 0.5rem; }
   }
+  /* Căn giữa hoàn hảo dòng keyword và các ngôi sao ở ảnh cover */
+  .hero-txt .kw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px; /* Khoảng cách đều đặn giữa chữ và ngôi sao */
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Bỏ margin thừa của ngôi sao (nếu có) để không bị lệch */
+  .hero-txt .kw svg.star {
+    margin: 0 !important; 
+  }
 </style>
 </head>
 <body>
