@@ -9,31 +9,32 @@ const SITE = {
   showreelUrl: "",                            // dán link showreel để hiện nút Watch showreel
   social: { TikTok: "", Instagram: "", Facebook: "", YouTube: "", LinkedIn: "" } // link rỗng sẽ tự ẩn
 };
+
 /* ===== DANH SÁCH DỰ ÁN — thêm/sửa video tại đây ===== */
 const PROJECTS = [
   { id: 1, title: "TOP 5 LÝ DO NÊN CHỌN VNU-SIS", category: "Promotional / Educational", filter: "Promotional",
-    role: "Video Editor — Full Post-production", youtubeId: "zhYwhkj75Yo", youtubeUrl: "https://youtube.com/shorts/zhYwhkj75Yo?feature=share",
-    description: "Video truyền thông giới thiệu những lý do nổi bật để lựa chọn Trường Khoa học Liên ngành và Nghệ thuật, Đại học Quốc gia Hà Nội.",
+    role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "zhYwhkj75Yo", youtubeUrl: "https://youtube.com/shorts/zhYwhkj75Yo?feature=share",
+    description: "Video truyền thông thu hút tân sinh viên. Mục tiêu của mình ở video này là biến những thông tin giáo dục trở nên trực quan, sinh động hơn nhờ kết hợp text animation linh hoạt và nhịp cắt dứt khoát.",
     editingFocus: ["Footage Selection", "Visual Storytelling", "Text Animation", "Video Pacing", "Audio Synchronization"] },
   { id: 2, title: "PHỎNG VẤN SINH VIÊN ĐÔ THỊ VNU-SIS", category: "Interview / Educational Content", filter: "Interview",
-    role: "Video Editor — Full Post-production", youtubeId: "lGIR8kpjBi4", youtubeUrl: "https://youtube.com/shorts/lGIR8kpjBi4?feature=share",
-    description: "Biên tập video phỏng vấn sinh viên về ngành học và trải nghiệm học tập tại VNU-SIS.",
+    role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "lGIR8kpjBi4", youtubeUrl: "https://youtube.com/shorts/lGIR8kpjBi4?feature=share",
+    description: "Biên tập dạng phỏng vấn. Khó khăn lớn nhất là chắt lọc câu trả lời sao cho súc tích nhưng không mất ý. Mình đã tập trung vào nhịp điệu hội thoại (Dialogue Pacing) và b-roll minh họa để giữ chân người xem.",
     editingFocus: ["Interview Editing", "Dialogue Pacing", "Subtitles", "Audio Synchronization", "Storytelling"] },
   { id: 3, title: "PHỎNG VẤN SINH VIÊN KIẾN TRÚC & THIẾT KẾ CẢNH QUAN", category: "Interview / Educational Content", filter: "Interview",
-    role: "Video Editor — Full Post-production", youtubeId: "_6mLGdwvv00", youtubeUrl: "https://youtube.com/shorts/_6mLGdwvv00?feature=share",
-    description: "Biên tập video phỏng vấn sinh viên ngành Kiến trúc và Thiết kế cảnh quan tại VNU-SIS.",
+    role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "_6mLGdwvv00", youtubeUrl: "https://youtube.com/shorts/_6mLGdwvv00?feature=share",
+    description: "Tương tự concept phỏng vấn, nhưng ở video này mình chú trọng hơn vào việc chọn footage (B-roll) ngành Kiến trúc lồng ghép mượt mà với lời nói của nhân vật để tăng độ tin cậy.",
     editingFocus: ["Interview Editing", "Footage Selection", "Dialogue Editing", "Visual Pacing", "Post-production"] },
-  { id: 4, title: "NEWS EDITING — 01", category: "News / Informative", filter: "News",
-    role: "Video Editor — Full Post-production", youtubeId: "dk7zCEMTNbQ", youtubeUrl: "https://youtube.com/shorts/dk7zCEMTNbQ?feature=share",
-    description: "Biên tập nội dung tin tức dạng video ngắn, kết hợp footage minh họa, phụ đề, âm thanh và hiệu ứng để truyền tải thông tin trực quan.",
+  { id: 4, title: "NEWS EDITING — BẢN TIN 01", category: "News / Informative", filter: "News",
+    role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "dk7zCEMTNbQ", youtubeUrl: "https://youtube.com/shorts/dk7zCEMTNbQ?feature=share",
+    description: "Video dạng bản tin ngắn. Thay vì để người xem ngập trong chữ, mình chủ động tìm kiếm các đoạn footage minh họa sát nghĩa nhất để truyền tải thông tin theo cách trực quan, dễ tiếp thu.",
     editingFocus: ["Footage Research", "B-roll Selection", "Subtitle Editing", "Visual Storytelling", "News Pacing"] },
-  { id: 5, title: "NEWS EDITING — 02", category: "News / Informative", filter: "News",
-    role: "Video Editor — Full Post-production", youtubeId: "u_I5aJlkHCU", youtubeUrl: "https://youtube.com/shorts/u_I5aJlkHCU?feature=share",
-    description: "Video tin tức ngắn chú trọng cách minh họa thông tin bằng footage, nhịp dựng và đồng bộ hình ảnh với nội dung.",
+  { id: 5, title: "NEWS EDITING — BẢN TIN 02", category: "News / Informative", filter: "News",
+    role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "u_I5aJlkHCU", youtubeUrl: "https://youtube.com/shorts/u_I5aJlkHCU?feature=share",
+    description: "Vẫn là nội dung tin tức, nhưng mình đẩy nhanh pacing (nhịp video) và đồng bộ sát sao giữa hình ảnh với giọng đọc Voice-over để duy trì sự chú ý liên tục.",
     editingFocus: ["Footage Selection", "B-roll", "Sound Editing", "Text Animation", "Video Pacing"] },
-  { id: 6, title: "AI LÀ GIÁN ĐIỆP?", category: "Entertainment / Game Show", filter: "Entertainment",
-    role: "Video Editor — Full Post-production", youtubeId: "YozYHw-AHoI", youtubeUrl: "https://youtube.com/shorts/YozYHw-AHoI?feature=share",
-    description: "Biên tập video trò chơi giải trí, lựa chọn các tình huống đáng chú ý, xử lý phản ứng người chơi, phụ đề và hiệu ứng âm thanh nhằm tăng tính hấp dẫn và duy trì diễn biến cuộc chơi.",
+  { id: 6, title: "GAMESHOW: AI LÀ GIÁN ĐIỆP?", category: "Entertainment / Game Show", filter: "Entertainment",
+    role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "YozYHw-AHoI", youtubeUrl: "https://youtube.com/shorts/YozYHw-AHoI?feature=share",
+    description: "Video giải trí siêu vui! Mình đã lọc ra những reaction đắt giá nhất, thêm thắt hiệu ứng âm thanh (sound effects) cực 'nhây' và text giật gân để đẩy cao trào cho tiếng cười.",
     editingFocus: ["Highlight Selection", "Reaction Cuts", "Comedy Timing", "Dynamic Captions", "Sound Effects", "Entertainment Pacing"] }
 ];
 
@@ -55,8 +56,8 @@ $("#copyBtn").addEventListener("click", async e => {
   const b = e.currentTarget;
   try { await navigator.clipboard.writeText(SITE.email); }
   catch { const t = document.createElement("textarea"); t.value = SITE.email; document.body.append(t); t.select(); document.execCommand("copy"); t.remove(); }
-  b.textContent = "Đã sao chép ✓"; live.textContent = "Đã sao chép email";
-  setTimeout(() => b.textContent = "Sao chép email", 2000);
+  b.textContent = "Đã copy nha ✓"; live.textContent = "Đã sao chép email";
+  setTimeout(() => b.textContent = "Copy email của mình", 2000);
 });
 
 /* Thumbnail: thử maxres, lỗi/placeholder thì dùng hqdefault */
