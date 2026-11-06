@@ -26,18 +26,29 @@
   svg.star:nth-of-type(4n+4) { color: #AEC6CF !important; } /* Xanh Pastel */
   symbol#star path { fill: currentColor; }
 
-  /* 2. Ảnh site-cover 16:9 nằm ngang và tiêu đề đè mờ lên ảnh */
+/* 2. Ảnh cover hiển thị linh hoạt không cắt chữ */
   .hero-in {
     position: relative;
     width: 100%;
-    aspect-ratio: 16 / 9;
+    min-height: 70vh; /* Tự động giãn chiều cao trên mobile */
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 12px;
     overflow: hidden;
     margin: 0 auto;
+    padding: 3rem 1.5rem; /* Tạo khoảng không để chữ không chạm viền */
   }
+
+  /* Chỉ ép tỷ lệ 16:9 khi xem trên Laptop/PC */
+  @media (min-width: 992px) {
+    .hero-in {
+      aspect-ratio: 16 / 9;
+      min-height: auto;
+      padding: 0;
+    }
+  }
+
   .hero-fig {
     position: absolute !important;
     inset: 0;
@@ -46,15 +57,13 @@
     margin: 0 !important;
     z-index: 1;
   }
-  .hero-fig .frame {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .hero-fig img {
+  .hero-fig .frame, .hero-fig img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
   }
+
+  /* Khung chữ */
   .hero-txt {
     position: relative;
     z-index: 2;
@@ -67,7 +76,8 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     color: #fff;
-    max-width: 85%;
+    width: 100%;
+    max-width: 800px;
   }
   .hero-txt h1, .hero-txt p, .hero-txt .kw, .hero-txt .role {
     color: #fff !important;
@@ -75,13 +85,34 @@
   }
   .hero-txt .cta {
     display: flex;
+    flex-wrap: wrap; /* Tự động rớt dòng nút bấm nếu thiếu chỗ */
     justify-content: center;
     gap: 1rem;
     margin-top: 1.5rem;
   }
+
+  /* Giao diện Tablet & Mobile */
   @media (max-width: 768px) {
-    .hero-in { aspect-ratio: 4 / 3; }
-    .hero-txt { padding: 1.5rem; }
+    .hero-in {
+      min-height: 80vh; 
+      padding: 3rem 1rem;
+    }
+    .hero-txt { 
+      padding: 1.5rem; 
+    }
+    .hero-txt h1 {
+      font-size: 2.2rem; /* Thu nhỏ chữ một chút */
+      line-height: 1.2;
+    }
+    .hero-txt .cta a.btn {
+      width: 100%; /* Kéo dài nút ra để dễ bấm bằng tay */
+    }
+  }
+
+  /* Giao diện Mobile màn hình rất nhỏ */
+  @media (max-width: 480px) {
+    .hero-txt h1 { font-size: 1.8rem; }
+    .hero-in { min-height: 85vh; padding: 2rem 0.5rem; }
   }
 </style>
 </head>
