@@ -35,7 +35,17 @@ const PROJECTS = [
   { id: 6, title: "GAMESHOW: AI LÀ GIÁN ĐIỆP?", category: "Entertainment / Game Show", filter: "Entertainment",
     role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "YozYHw-AHoI", youtubeUrl: "https://youtube.com/shorts/YozYHw-AHoI?feature=share",
     description: "Video giải trí siêu vui! Mình đã lọc ra những reaction đắt giá nhất, thêm thắt hiệu ứng âm thanh (sound effects) cực 'nhây' và text giật gân để đẩy cao trào cho tiếng cười.",
-    editingFocus: ["Highlight Selection", "Reaction Cuts", "Comedy Timing", "Dynamic Captions", "Sound Effects", "Entertainment Pacing"] }
+    editingFocus: ["Highlight Selection", "Reaction Cuts", "Comedy Timing", "Dynamic Captions", "Sound Effects", "Entertainment Pacing"] },
+  
+  /* --- 2 VIDEO MỚI THÊM VÀO ĐÂY NHA --- */
+  { id: 7, title: "PHỎNG VẤN THÍ SINH SAU THI", category: "Interview / Event", filter: "Interview",
+    role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "Fu7lXkK8DWo", youtubeUrl: "https://youtube.com/shorts/Fu7lXkK8DWo?feature=share",
+    description: "Bắt trọn cảm xúc chân thật, tự nhiên của các bạn thí sinh ngay sau khi ra khỏi phòng thi. Mình tập trung vào nhịp điệu phỏng vấn nhanh gọn, chèn text nhấn nhá vào các keywords để video giữ được nhiệt từ đầu đến cuối.",
+    editingFocus: ["Quick Interview Editing", "Reaction Cuts", "Dynamic Captions", "Energy Pacing"] },
+  { id: 8, title: "RECAP NHẬP HỌC VNU-SIS 2026", category: "Event Recap / Promotional", filter: "Promotional",
+    role: "Editor — Cân trọn khâu Hậu kỳ (Post-production)", youtubeId: "8oBYEn3LKu0", youtubeUrl: "https://youtube.com/shorts/8oBYEn3LKu0?feature=share",
+    description: "Gói gọn không khí sôi động, đầy năng lượng của ngày hội nhập học VNU-SIS 2026. Ở video này, mình làm việc chủ yếu với âm nhạc (beat syncing), chọn lọc các khoảnh khắc đắt giá (highlights) và sử dụng chuyển cảnh mượt mà.",
+    editingFocus: ["Event Recap", "Beat Syncing", "Highlight Selection", "Transitions", "Color Grading"] }
 ];
 
 const $ = (s, r = document) => r.querySelector(s);
