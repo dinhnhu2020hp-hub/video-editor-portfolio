@@ -12,7 +12,7 @@ const SITE = {
 /* ===== DANH SÁCH DỰ ÁN — thêm/sửa video tại đây ===== */
 const PROJECTS = [
   { id: 1, title: "TOP 5 LÝ DO NÊN CHỌN VNU-SIS", category: "Promotional / Educational", filter: "Promotional",
-    role: "Video Editor — Full Post-production", youtubeId: "3RwXhw4CGDg", youtubeUrl: "https://youtube.com/shorts/3RwXhw4CGDg?feature=share",
+    role: "Video Editor — Full Post-production", youtubeId: "zhYwhkj75Yo", youtubeUrl: "https://youtube.com/shorts/zhYwhkj75Yo?feature=share",
     description: "Video truyền thông giới thiệu những lý do nổi bật để lựa chọn Trường Khoa học Liên ngành và Nghệ thuật, Đại học Quốc gia Hà Nội.",
     editingFocus: ["Footage Selection", "Visual Storytelling", "Text Animation", "Video Pacing", "Audio Synchronization"] },
   { id: 2, title: "PHỎNG VẤN SINH VIÊN ĐÔ THỊ VNU-SIS", category: "Interview / Educational Content", filter: "Interview",
@@ -55,8 +55,8 @@ $("#copyBtn").addEventListener("click", async e => {
   const b = e.currentTarget;
   try { await navigator.clipboard.writeText(SITE.email); }
   catch { const t = document.createElement("textarea"); t.value = SITE.email; document.body.append(t); t.select(); document.execCommand("copy"); t.remove(); }
-  b.textContent = "Copied ✓"; live.textContent = "Đã sao chép email";
-  setTimeout(() => b.textContent = "Copy email", 2000);
+  b.textContent = "Đã sao chép ✓"; live.textContent = "Đã sao chép email";
+  setTimeout(() => b.textContent = "Sao chép email", 2000);
 });
 
 /* Thumbnail: thử maxres, lỗi/placeholder thì dùng hqdefault */
